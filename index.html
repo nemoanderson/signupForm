@@ -17,6 +17,55 @@
   </style>
 </head>
 <body>
+      <!--1-->
+  <h1 id="title"></h1>
+  <!--2-->
+  <p id="discription"></p>
+  <!--3-->
+  <form action="" id="survey-form">
+    <!-- 10 -->
+    <label for="name" id="name-label">Name</label>
+    <!-- 4 11 -->
+    <input type="text" id="name" placeholder="enter your name" required>
+    <!-- 10 -->
+    <label for="email" id="email-label">e-Mail</label>
+    <!-- 5 6 11 -->
+    <input type="email" id="email" placeholder="enter your email" required>
+    <!-- 10 -->
+    <label for="number" id="number-label">Age</label>
+    <!-- 7 8 9 11 -->
+    <input type="number" name="" id="number" min="13" max="99" placeholder="Enter your age" >
+  </form>
+  <p>Which option best describes your skill level?</p>
+  <!--Select with id dropdown, two or more selectable options, decendent of survey-form-->
+  <select id="dropdown"> 
+    <option disabled="" selected="" value="">Select
+    <option value="newbie">Newbie</option>
+    <option value="junior">Junior</option>
+    <option value="pro">Pro</option>
+  </select>
+  <p>Would you like to sign up for our email?</p>
+  <label>
+    <input name="choice" type="radio" value="yes">
+  </label>Yes
+  <label>
+    <input name="choice" type="radio" value="no">No
+  </label>
+  <p>What career path are you looking to take? (Check all that applies)</p>
+  <label>
+    <input type="checkbox" value="front-end" class="input-checkbox">Front-end
+  </label>
+  <label>
+    <input type="checkbox" value="back-end" class="input-checkbox">Back-end
+  </label>
+  <label>
+    <input type="checkbox" value="full-stack" class="input-checkbox">Full-stack
+  </label>
+  <p>Comment</p>
+  <textarea =""></textarea>
+  <button type="submit" id="submit" class="submit-button">Submit Form</button>
+<br>
+<br>
   Learn to code by watching others
 
   See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
