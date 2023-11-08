@@ -1,1 +1,40 @@
-/*  */
+
+/* Notes */
+
+/* ######################################################################
+ Use var for styling to make it easier to change if needed. Clamp
+########################################################################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+/* Front-end Style Guide  */
+:root{
+    /* Layout - Mobile: 375px - Desktop: 1440px */
+
+
+    /* Colors */
+
+     /* Primary colors */
+  --Red-Primary: hsl(0, 100%, 74%) ;
+  --Green-Primary: hsl(154, 59%, 51%);
+      /* Accent colors */
+  --Blue-Accent: hsl(248, 32%, 49%);
+      /* Neutral colors */
+  --Dark-Blue-Neutral: hsl(249, 10%, 26%); 
+  --Grayish-Blue-Neutral: hsl(246, 25%, 77%);
+    
+  /* Typography */
+      
+    /* Body size - Font size: 16px */
+
+    /* Font Family: [Poppins](https: //fonts.google.com/specimen/Poppins)
+          - Weights: 400, 500, 600, 700 */
+  --poppins-regular-400: 'Poppins', sans-serif;
+  --poppins-medium-500: 500 'Poppins',
+    sans-serif;
+  --poppins-semi-bold-600: 600 'Poppins',
+    sans-serif;
+  --poppins-bold-700: 700 'Poppins',
+    sans-serif;
+
+}
+
