@@ -28,13 +28,16 @@
 
     /* Font Family: [Poppins](https: //fonts.google.com/specimen/Poppins)
           - Weights: 400, 500, 600, 700 */
-  --poppins-regular-400: 'Poppins', sans-serif;
-  --poppins-medium-500: 500 'Poppins',
-    sans-serif;
-  --poppins-semi-bold-600: 600 'Poppins',
-    sans-serif;
-  --poppins-bold-700: 700 'Poppins',
-    sans-serif;
+  --poppins-regular-400: Poppins, sans-serif;
 
 }
 
+h1 {
+  font-family: var(--poppins-regular-400);
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
