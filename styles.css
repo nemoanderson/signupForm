@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --white: white;
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+  --body-copy: 16px;
+  --border-radius: 6px;
+  --box-border: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: var(--primary-red, salmon);
+  color: var(--white, white);
+  font-family: Poppins, serif;
+  font-size: var(--body-copy, 16px);
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+}
+h1 {
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h1 p {
+  text-align: center;
+}
+
+form {
+  background-color: var(--white, white);
+  color: var(--neutral-grayish-blue, gray);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  max-width: 375rem;
+}
+
+label {
+  display: block;
+}
+
+button {
+  border-radius: var(--border-radius);
+  min-height: 8vh;
+  width: 100%;
+  cursor: pointer;
+  border: var(--box-border);
+}
+
+span {
+  font-weight: bold;
+}
+
+input[type="text"], [type="email"], [type="password"] {
+  border-radius: var(--border-radius, 6px);
+  width: 100%;
+  height: 8vh;
+  margin: 9px auto;
+}
+
+::placeholder {
+  font-weight: 700;
+  color: var(--neutral-dark-blue);
+  opacity: 1; /*Firefox*/
+  padding-left: 15px;
+}
+.text-section {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.form-section {
+  margin: auto;
+}
+
+.trial-btn {
+  background-color: var(--accent-blue, mediumslateblue);
+  color: var(--white, white);
+  width: 375px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-submit-btn {
+  background-color: var(--primary-green, mediumseagreen);
+  color: var(--white);
+  font-size: 19px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0 0 rgba(36, 145, 98, 0.9);;
+  
+}
+
+.disclaimer {
+  font-size: 9px;
+  text-align: center;
+  padding: 9px;
+}
+
+.tos {
+  color: var(--primary-red, salmon);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+  }
+}
